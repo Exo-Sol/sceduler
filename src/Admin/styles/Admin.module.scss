@@ -1,0 +1,122 @@
+$adminBlue: #0b0c1b;
+$textColor: aliceblue;
+$workerBlue: #0a416b;
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap");
+
+@mixin flex_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin button {
+  border-radius: 50%;
+  height: 50px;
+  width: auto;
+  padding: 2%;
+  border: none;
+  color: $adminBlue;
+  font-weight: bold;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.adminWrap {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 20% auto;
+  grid-template-rows: 5fr 1.5fr 1fr;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.userList {
+  grid-row-start: 1;
+  grid-row-end: 5;
+  background-color: $workerBlue;
+  color: $textColor;
+  text-align: center;
+  overflow: scroll;
+  border-radius: 0px 5px 3px 0px;
+  box-shadow: 2px 2px 8px lightslategray;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+
+  #workerTitle {
+    padding: 10px;
+    height: 60px;
+    padding-top: 18px;
+    margin-bottom: 15px;
+    font-family: "Noto Sans JP", sans-serif, Helvetica, Arial, sans-serif;
+    align-items: center;
+    font-size: 0.9rem;
+    background-color: $adminBlue;
+    color: whitesmoke;
+  }
+  li {
+    padding: 0px 5px 0px 5px;
+  }
+
+  .btn {
+    background: unset;
+    border: 2px rgb(2, 2, 66);
+    display: inline-flex;
+    align-items: center;
+  }
+}
+
+.dateNav {
+  @include flex_center;
+  grid-column: 2/3;
+  grid-row: 3/4;
+  height: 100%;
+  background-color: $adminBlue;
+  background-size: cover;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1.3rem;
+  color: whitesmoke;
+
+  .timeArrow {
+    color: whitesmoke;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-weight: 500;
+    font-size: 2rem;
+  }
+}
+
+.shiftArea {
+  padding: 10px;
+  font-size: 1.1em;
+  color: $textColor;
+  background-color: $adminBlue;
+
+  ul {
+    display: grid;
+    height: 90%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    row-gap: 30%;
+    column-gap: 8%;
+    padding: 10px;
+    padding-top: 25px;
+  }
+  li {
+    background-color: $workerBlue;
+    text-align: center;
+    padding: 3px;
+    border-radius: 15%;
+  }
+}
