@@ -4,6 +4,7 @@ import { usersArray, shiftArr } from "./Data";
 import DateNav from "./components/DateNav";
 import UserList from "./components/Users";
 import Shifts from "./components/Shifts";
+import Main from "./components/Main";
 
 const AdminMain = () => {
   ///DATE NAVIGATION LOGIC LIFTED TO PARENT///////////////////////////////////
@@ -77,7 +78,9 @@ const AdminMain = () => {
   return (
     <div className={styles.adminWrap}>
       <UserList users={usersArray} />
-      <main></main>
+      <main>
+        <Main />
+      </main>
 
       <Shifts shiftArr={shiftArr} shiftSelect={shiftSelect} />
 

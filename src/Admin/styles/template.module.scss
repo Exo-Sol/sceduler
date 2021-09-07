@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.ampmGrid {
+  display: flex;
+  gap: 2px 15px;
+  justify-content: center;
+}
+
+.gridWrapp {
+  overflow: visible;
+  display: grid;
+  grid-template-columns: 1fr;
+
+  width: 42.5%;
+}
+
+.wrapper {
+  height: 90%;
+  width: 100%;
+
+  border: red solid;
+}
+.list {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+
+  .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: rgb(0, 0, 0) 1px solid;
+    height: 25%;
+    margin: 2px;
+  }
+}
+
+#time {
+  width: 35%;
+  background-color: rgb(192, 192, 224);
+}
+
+#durat {
+  width: 20%;
+  background-color: rgb(217, 192, 224);
+  margin-left: auto;
+}

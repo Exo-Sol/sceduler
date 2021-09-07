@@ -8,7 +8,7 @@ const Shifts = ({ shiftArr, shiftSelect }) => {
 
   return (
     <div className={styles.shiftArea}>
-      <h3>Smjene</h3>
+      <h4>Smjene</h4>
       <ul>
         {shiftArr.map((shift) => {
           return (

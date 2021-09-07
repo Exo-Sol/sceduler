@@ -33,7 +33,7 @@ $workerBlue: #0a416b;
   height: 100vh;
   display: grid;
   grid-template-columns: 20% auto;
-  grid-template-rows: 5fr 1.5fr 1fr;
+  grid-template-rows: 5fr 1.2fr 0.7fr;
 }
 
 ::-webkit-scrollbar {
@@ -97,8 +97,10 @@ $workerBlue: #0a416b;
 }
 
 .shiftArea {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 0.8em;
   padding: 10px;
-  font-size: 1.1em;
+
   color: $textColor;
   background-color: $adminBlue;
 
@@ -111,7 +113,7 @@ $workerBlue: #0a416b;
     row-gap: 30%;
     column-gap: 8%;
     padding: 10px;
-    padding-top: 25px;
+    padding-top: 15px;
   }
   li {
     background-color: $workerBlue;
